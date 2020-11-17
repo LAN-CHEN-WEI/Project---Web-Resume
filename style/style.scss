@@ -494,3 +494,25 @@ section.contact {
     align-items: center;
   }
 }
+
+@media screen and (max-width: 414px) {
+  section.contact {
+    div.left {
+      padding-top: 1.5rem;
+      div {
+        font-size: 1rem;
+        input {
+          height: 30px;
+        }
+      }
+      textarea {
+        height: 110px;
+      }
+    }
+    div.right {
+      div.inform {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

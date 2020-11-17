@@ -574,4 +574,22 @@ section.contact div.line {
             align-items: center;
   }
 }
+
+@media screen and (max-width: 414px) {
+  section.contact div.left {
+    padding-top: 1.5rem;
+  }
+  section.contact div.left div {
+    font-size: 1rem;
+  }
+  section.contact div.left div input {
+    height: 30px;
+  }
+  section.contact div.left textarea {
+    height: 110px;
+  }
+  section.contact div.right div.inform {
+    font-size: 1.25rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
