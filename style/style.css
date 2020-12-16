@@ -627,6 +627,12 @@ section.contact div.line {
   }
 }
 
+@media screen and (max-width: 540px) and (max-height: 720px) {
+  section.contact div.right {
+    margin-top: 11rem;
+  }
+}
+
 @media screen and (max-width: 506px) {
   section.contact div.left {
     padding-top: 1.5rem;
