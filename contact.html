@@ -18,14 +18,14 @@
     />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <body>
+  <body onload="init()">
     <!-- 個人網站-聯絡方式 -->
     <header>
       <nav>
         <ul>
-          <li><a href="index.html" class="active">首頁</a></li>
+          <li><a href="index.html">首頁</a></li>
           <li><a href="resume.html">我的履歷</a></li>
-          <li><a href="#">聯絡方式</a></li>
+          <li><a href="#" class="active">聯絡方式</a></li>
           <li>
             <a
               href="https://drive.google.com/file/d/1_kYLpuArjPr-W1uQlGJURWwVXcLBJz6K/view"
@@ -43,22 +43,48 @@
         <div class="left">
           <form action="">
             <div>
-              <label for="name">姓名</label>
-              <input id="name" type="text" name="name" />
+              <label for="nameText">姓名</label>
+              <input
+                id="nameText"
+                type="text"
+                name="name"
+                placeholder="寄件者姓名"
+                required
+              />
             </div>
             <div>
-              <label for="email">郵件</label>
-              <input id="email"" type="email" name="email" />
+              <label for="emailText">郵件</label>
+              <input id="emailText"" type="email" name="email"
+              placeholder="電子郵件" required/>
             </div>
             <div>
-              <label for="phone">電話</label>
-              <input id="phone"" type="tel"" name="phoneNumber" />
+              <label for="telText">電話</label>
+              <input id="telText"" type="tel"" name="tel" placeholder="電話"
+              required/>
             </div>
             <div>
-              <label for="phone">需求</label>
-              <textarea name="needs" id="needs" cols="30" rows="10"></textarea>
+              <label for="subText">主旨</label>
+              <input
+                id="subText"
+                type="text"
+                name="subject"
+                placeholder="主旨"
+                required
+              />
             </div>
-            <button type="submit">交出表單</button>
+            <div>
+              <label for="bodyText">內容</label>
+              <textarea
+                name="content"
+                id="bodyText"
+                cols="30"
+                rows="10"
+                placeholder="郵件內容"
+                required
+              ></textarea>
+            </div>
+            <button onclick="submitHandler();">寄送郵件</button>
+            <a id="mailTo"></a>
           </form>
         </div>
 
@@ -97,4 +123,5 @@
     </footer>
   </body>
   <script src="./app.js"></script>
+  <script src="./EmailTo.js"></script>
 </html>
