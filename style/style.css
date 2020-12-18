@@ -180,6 +180,14 @@ header nav ul {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li img {
+  height: 75px;
+  margin-right: 2rem;
 }
 
 header nav ul li a {
@@ -363,59 +371,33 @@ section.contact {
 
 section.contact div.left {
   width: 50%;
-  padding: 3rem;
+  padding: 1.5rem 3.5rem 3.5rem 3.5rem;
 }
 
 section.contact div.left form {
   height: 60vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 1.75rem;
 }
 
 section.contact div.left form div input {
   background-color: #3bd0f1;
-  border: none;
-  height: 3rem;
-  width: 80%;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  font-size: 1.75rem;
-  color: white;
 }
 
 section.contact div.left form div textarea {
   background-color: #3bd0f1;
-  border: none;
-  width: 80%;
-  height: 90%;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  font-size: 1.25rem;
-  color: white;
-  vertical-align: top;
 }
 
-section.contact div.left form button {
-  border: none;
-  background-color: #226cda;
-  color: white;
-  font-size: 2rem;
-  width: 25%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  cursor: pointer;
-  border-radius: 10px;
-  padding: 1rem;
+section.contact div.left form div.btnSubmit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.contact div.left form div.btnSubmit button {
+  margin-top: 1rem;
 }
 
 section.contact div.right {
@@ -467,26 +449,11 @@ section.contact div.line {
   div.AquaRect {
     display: none;
   }
-  section.contact div.left form button {
-    font-size: 1.5rem;
-    padding: 0.75rem;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
 }
 
 @media screen and (max-width: 1350px) {
   section.intro h1 {
     color: black;
-  }
-}
-
-@media screen and (max-width: 1310px) {
-  section.contact div.left form button {
-    font-size: 1.25rem;
-    padding: 0.5rem;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
   }
 }
 
@@ -507,11 +474,6 @@ section.contact div.line {
   section.contact div.left {
     width: 100%;
   }
-  section.contact div.left form button {
-    font-size: 1.25rem;
-    width: 50%;
-    margin-top: 1rem;
-  }
   section.contact div.line {
     display: none;
   }
@@ -519,7 +481,6 @@ section.contact div.line {
     border-top: 2px solid black;
     width: 100%;
     margin-left: 0;
-    margin-top: 3rem;
   }
   section.contact div.right div.inform {
     margin-top: 3rem;
@@ -549,9 +510,15 @@ section.contact div.line {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   header nav ul li {
     margin: 0.5rem 0rem;
+  }
+  header nav ul li img {
+    display: none;
   }
   header nav ul li a {
     font-size: 1.25rem;
@@ -609,135 +576,72 @@ section.contact div.line {
   }
 }
 
-@media screen and (max-width: 768px) and (max-height: 1024px) {
-  section.contact div.right {
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  section.contact div.right {
-    margin-top: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  section.contact div.right {
-    margin-top: 2.5rem;
-  }
-}
-
 @media screen and (max-width: 540px) and (max-height: 720px) {
   section.contact div.right {
-    margin-top: 11rem;
+    margin-top: 8.5rem;
   }
 }
 
 @media screen and (max-width: 506px) {
   section.contact div.left {
-    padding-top: 1.5rem;
-  }
-  section.contact div.left div {
-    font-size: 1rem;
-  }
-  section.contact div.left div input {
-    height: 30px;
-  }
-  section.contact div.left textarea {
-    height: 110px;
-  }
-  section.contact div.right {
-    margin-top: 2.5rem;
+    padding: 1rem 1.5rem 3.5rem 1.5rem;
   }
   section.contact div.right div.inform {
     font-size: 1.25rem;
-  }
-}
-
-@media screen and (max-width: 506px) and (max-height: 823px) {
-  section.contact div.right {
-    margin-top: 7.5rem;
-  }
-}
-
-@media screen and (max-width: 506px) and (max-height: 731px) {
-  section.contact div.right {
-    margin-top: 11rem;
   }
 }
 
 @media screen and (max-width: 414px) and (max-height: 736px) {
   section.contact div.right {
-    margin-top: 10.5rem;
+    margin-top: 8rem;
   }
 }
 
-@media screen and (max-width: 380px) {
-  section.contact div.left {
-    padding-top: 1.5rem;
-  }
-  section.contact div.left form button {
-    margin-top: 1.75rem;
-  }
-  section.contact div.left div {
-    height: 40%;
-    font-size: 1rem;
-  }
-  section.contact div.left div input {
-    height: 30px;
-  }
+@media screen and (max-width: 411px) and (max-height: 832px) {
   section.contact div.right {
-    margin-top: 6rem;
+    margin-top: 4.75rem;
   }
-  section.contact div.right div.inform {
-    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 411px) and (max-height: 731px) {
+  section.contact div.right {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 384px) and (max-height: 640px) {
+  section.contact div.right {
+    margin-top: 11.5rem;
   }
 }
 
 @media screen and (max-width: 375px) and (max-height: 812px) {
   section.contact div.right {
-    margin-top: 1.5rem;
+    margin-top: 5rem;
   }
 }
 
 @media screen and (max-width: 375px) and (max-height: 667px) {
   section.contact div.right {
-    margin-top: 4.5rem;
+    margin-top: 10.5rem;
   }
 }
 
 @media screen and (max-width: 360px) and (max-height: 640px) {
   section.contact div.right {
-    margin-top: 5rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  section.contact div.left {
-    padding-top: 1.5rem;
-  }
-  section.contact div.left form button {
-    margin-top: 2.5rem;
-    font-size: 1rem;
-  }
-  section.contact div.right {
-    margin-top: 4.5rem;
-  }
-}
-
-@media screen and (max-width: 320px) and (max-height: 861px) {
-  section.contact div.right {
-    margin-top: 6rem;
+    margin-top: 11.5rem;
   }
 }
 
 @media screen and (max-width: 320px) and (max-height: 568px) {
   section.contact div.right {
-    margin-top: 12rem;
+    margin-top: 14.5rem;
   }
-  section.contact div.right form button {
-    margin-top: 2.5rem;
-    font-size: 1rem;
+}
+
+@media screen and (max-width: 280px) and (max-height: 653px) {
+  section.contact div.right {
+    margin-top: 8.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
