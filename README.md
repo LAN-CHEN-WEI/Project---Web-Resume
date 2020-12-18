@@ -7,4 +7,4 @@
 2. HTML做出基本網頁架構
 3. Sass網頁前端美化以及提升使用外觀
 4. 包含基礎的RWD配合網頁縮放，使用手機瀏覽時不會導致版面擠壓重疊
-5. 套用BootStarp Forms跟Grid system來達成RWD表格的功能
+5. 套用Bootstrap Forms跟Grid system來達成RWD表格的功能
